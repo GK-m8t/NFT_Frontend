@@ -1,0 +1,57 @@
+{
+  "title": "checkout",
+  "buttonText": "Back to dashboard",
+  "subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "shipping": {
+    "title": "SHIPPING",
+    "errorMessages": {
+      "name": "Required",
+      "email": "Required",
+      "address": "Required",
+      "city": "Required",
+      "state": "Required",
+      "PIN": "Required",
+      "country": "Required"
+    },
+    "buttons": {
+      "confirm": "Confirm",
+      "edit": "Edit",
+      "cancel": "Cancel"
+    },
+    "reviseModal": {
+      "confirmationMessage": "Did you mean this?",
+      "button": "Confirm"
+    }
+  },
+  "payment": {
+    "title": "PAYMENT",
+    "subTitle": "Lorem ipsum dolor sit amet, consectetur dolore magna aliqua.",
+    "paymentItems": [
+      "Print",
+      "Shipping",
+      "Total"
+    ],
+    "paymentMethods": [
+      "card",
+      "crypto"
+    ],
+    "paymentMethodLabels": {
+      "card": "Pay with credit card",
+      "crypto": "Pay with crypto"
+    },
+    "button": "Pay"
+  },
+  "toast": {
+    "success": {
+      "createRequest": "Shipping address has been saved!"
+    },
+    "error": {
+      "createRequest": {
+        "invalidAddress": "Invalid shipping address.",
+        "default": "Something went wrong."
+      },
+      "createSession": "Something went wrong."
+    },
+    "info": {}
+  }
+}

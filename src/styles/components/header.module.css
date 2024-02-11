@@ -1,0 +1,100 @@
+.header {
+    background-color: var(--header-bg);
+    color: var(--text-color-light-3);
+    padding: 8px 32px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px var(--page-margin) 0px var(--page-margin);
+    border-radius: 12px;
+    border-bottom: 3px solid var(--header-border);
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+    gap: 20px;
+    opacity: 80%;
+}
+
+.dashboardRedirectionIcon {
+    cursor: pointer;
+  }
+
+.nftFooter {
+    font: normal normal 400 10px var(--font-family-secondary);
+    display: flex;
+    color: var(--text-color-light-2);
+    align-items: center;
+    justify-content: center;
+    padding: 16px 4px 0px 0px;
+}
+
+.accountDetails{
+    display: flex;
+    text-align:right;
+}
+
+.noAccountDetails{
+    display: none;
+    text-align:right;
+}
+
+.accountButton{
+    background-color: var(--account-button);
+    color: var(--text-color-light-1);
+    text-align: center;
+    border-top: 0px solid var(--text-color-light-2);
+    border-radius: 8px;
+    width: 142px;
+    height: 44px;
+    font: normal normal normal 16px var(--font-family-secondary);
+    transition: all 0.1s ease-in-out;
+}
+
+.accountButton:hover span {
+    display: none;
+  }
+
+.accountButton:hover{
+    background: var( --checkout-col-heading-bg);
+    opacity: 0.9;
+    /*box-shadow: 1px 1px 1px var(--text-color-light-2);*/
+    border: 1px solid var(--text-color-light-3);
+    /*border-top: 0px solid var(--checkout-button-border);*/
+    /*border-right: 0px solid var(--checkout-button-border);*/
+    /*border-bottom: 3px solid var(--checkout-button-border);*/
+    /*border-left: 3px solid var(--checkout-button-border);*/
+  }
+  
+  .accountButton:hover:before {
+    content: "DISCONNECT";
+    /*color:var(--text-color-dark-1);*/
+    color:var(--text-color-light-3);
+    font: normal normal normal 24px var(--font-family-primary)
+  }
+
+.icon a> img {
+    /* width: 169px; */
+    height: 42px;
+}
+
+@media screen and (max-width: 1040px) {
+    .header {
+        margin: 0 80px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header {
+        margin: 0 20px;
+    }
+
+    .icon a>img {
+        width: 140px;
+        height: 60px;
+    }
+}

@@ -1,0 +1,35 @@
+
+.currentStatus{
+    color: var(--payment-pending) !important;
+    font: normal normal 400 16px var(--font-family-secondary);
+    margin-left: 4px;
+}
+
+.status_update_modal {
+    width: 400px;
+}
+
+.radioLabel {
+    min-width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    color: var(--text-color-light-1);
+    font: normal normal 500 14px var(--font-family-secondary);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.radioLabel:hover {
+  color: var(--text-color-light-2);
+  cursor: pointer;
+}
+
+.button_wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.25rem;
+}

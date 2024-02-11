@@ -1,0 +1,241 @@
+
+.table_div {
+    width: 100%;
+}
+
+.table_div th {
+    text-align: start;
+}
+
+.table_div th:first-child, .table_div td:first-child {
+    text-align: center;
+}
+
+.table_div thead {
+    background: var(--checkout-col-heading-bg);
+    position: relative;
+}
+
+.table_div thead:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 10px;
+    bottom: -10px;
+    background: var(--checkout-col-heading-bg);
+    z-index: 1;
+
+}
+
+.table_div th:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+.table_div th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+.table_div thead tr th {
+    height: 36px;
+    padding: 16px 12px;
+    color: var(--text-color-light-1);
+    text-transform: uppercase;
+    font: normal normal 600 13px var(--font-family-secondary);
+}
+
+.table_div tbody tr td {
+    padding: 12px;
+    color: var(--text-color-light-1);
+    font: normal normal 400 13px var(--font-family-secondary);
+}
+
+.table_div tbody tr:first-child td {
+    padding-top: 15px !important;
+}
+
+.double_row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 6px;
+}
+.double_row .userName {
+  font-weight: 500 !important;
+}
+
+.table_div tbody {
+    position: relative;
+    border-radius: 10px;
+    z-index: 3;
+    background: var(--checkout-text-input);
+}
+
+.table_div tbody:after {
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 3px solid var(--text-color-light-2);
+    position: absolute;
+    border-radius: 12px;
+    opacity: 0.5;
+    z-index: -1;
+    background: transparent;
+}
+
+.table_div tbody tr {
+    border-bottom: 1px solid var(--table-row-border);
+}
+
+.table_div tbody tr:last-child {
+    border-bottom: none;
+}
+
+.table_div tbody tr:first-child td:first-child {
+    border-top-left-radius: 12px;
+}
+
+.table_div tbody tr:first-child td:last-child {
+    border-top-right-radius: 12px;
+}
+
+.table_div tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+}
+
+.table_div tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+}
+
+.filterIcon_span{
+    height: 20px;
+    width: 20px;
+    background: transparent;
+    border: 0.5px solid var(--white);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 99;
+}
+
+.filterIcon_span img{
+    height: 70%;
+    width: 70%;
+}
+
+.updateButton {
+    /*background-color: var(--text-color-light-4);*/
+    background-color: transparent;
+    border: 2px solid var(--checkout-col-heading-bg);
+    border-radius: 12px;
+    transition: all 0.1s ease-in-out;
+    /*box-shadow: 2px 2px 2px var(--text-color-light-2);*/
+}
+
+.updateButton:hover:not(:disabled) {
+    opacity: 0.9;
+    background-color: var(--text-color-light-4);
+    /*box-shadow: 1px 1px 1px var(--text-color-light-2);*/
+    border: 2px solid white;
+    /*border-top: 0px solid var(--checkout-button-border);*/
+    /*border-right: 0px solid var(--checkout-button-border);*/
+    /*border-bottom: 3px solid var(--checkout-button-border);*/
+    /*border-left: 3px solid var(--checkout-button-border);*/
+}
+
+.updateButton:disabled {
+    /* Add styles for the disabled state, e.g., grayed out */
+    background-color: transparent;
+    border: 2px solid var(--checkout-col-heading-bg);
+    border-radius: 12px;
+    transition: all 0.1s ease-in-out;
+    pointer-events: none; /* Prevent clicking on the disabled button */
+}
+
+.options_close{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 6px;
+}
+
+.options_close button{
+    transform: translate(50%,20%);
+}
+
+.filterOptions{
+    position: absolute;
+    padding: 0 16px;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    top: 22px;
+    left: 0;
+    z-index: 99;
+    width: 148px;
+    background: var(--text-color-dark-1);
+}
+
+.statusOptions{
+    width: 194px !important;
+}
+
+.radioLabel{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    color: var(--text-color-light-1);
+    font: normal normal 500 13px var(--font-family-secondary);
+    cursor: pointer;
+}
+
+.status_col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status{
+    color: var(--payment-pending) !important;
+}
+
+.status_col button {
+    /*background-color: var(--text-color-light-4);*/
+    background-color: transparent;
+    border: 2px solid var(--checkout-col-heading-bg);
+    border-radius: 12px;
+    padding: 6px 10px;
+    margin-right: 12px;
+    transition: all 0.3s ease-in-out;
+    width: fit-content;
+    text-transform: uppercase;
+    font-weight: 500 !important;
+}
+
+.status_col button:hover {
+    opacity: 0.9;
+    background-color: var(--text-color-light-4);
+    /*box-shadow: 1px 1px 1px var(--text-color-light-2);*/
+    border: 2px solid white;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .status_col {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .status_col span {
+        margin-bottom: 4px;
+    }
+
+    .status_col button {
+        margin-left: 0;
+    }
+}

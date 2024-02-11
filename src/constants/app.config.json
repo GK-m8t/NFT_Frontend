@@ -1,0 +1,21 @@
+{
+  "tokenContractAddress": "0x8AE1dEa0e5369DF76D902A54802A0a28464B8b37",
+  "chainId": 137,
+  "serverUrl": "http://localhost:8083/rest/",
+  "authMessage": "wagmi client",
+  "expirationTime": 3600,
+  "printStatusMapping": {
+    "No Order": 0,
+    "Requested": 1,
+    "In print": 2,
+    "Shipment initiated": 3,
+    "Delivered": 4
+  },
+  "contractStatusCodes": {
+    "0": "No order",
+    "1": "Requested",
+    "2": "In print",
+    "3": "Shipment initiated",
+    "4": "Delivered"
+  }
+}

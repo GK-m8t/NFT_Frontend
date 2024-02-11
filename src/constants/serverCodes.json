@@ -1,0 +1,17 @@
+{
+  "shippingStatus": {
+    "prePrint": "SS00",
+    "inPrint": "SS01",
+    "dispatched": "SS02",
+    "delivered": "SS03"
+  },
+  "paymentStatus": {
+    "pending": "PS00",
+    "completed": "PS01",
+    "delayed":"PS02"
+  },
+  "paymentMethod": {
+    "card": "PM00",
+    "crypto": "PM01"
+  }
+}

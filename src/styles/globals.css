@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spinnaker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import "pages/common.css";
+@import "pages/home.css";
+@import "pages/status.css";
+@import "pages/dashboard.css";
+@import "pages/success.css";
+@import "components/modals/common.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+}
+
+/*@media (prefers-color-scheme: dark) {*/
+:root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+    --text-color-light-1: #cccccc;
+    --text-color-light-2: #737373;
+    --text-color-light-3: #FFFFFF;
+    --text-color-light-4: #C11F83;
+    --text-color-disconnect: #FF0000;
+    --text-color-button-background-1: #6445ed;
+    --text-color-dark-1: #0B0D21;
+    --font-family-primary: 'Bebas Neue', sans-serif;
+    --font-family-secondary: 'Sarabun', sans-serif;
+    --font-family-loader: "SpaceMono";
+    --checkout-text-input: #191b33;
+    --checkout-divider: #242428;
+    --checkout-text-input-border: #7373735e;
+    --checkout-col-heading-bg: #2a2b40;
+    --checkout-button-border: #e468b5;
+    --header-bg: #131630;
+    --header-border: #73737353;
+    --account-button: #1d204a;
+    --page-margin: 160px;
+    --payment-pending: #E6BB00;
+    --white:#fff;
+    --edit-button: #741fc1;
+    --edit-button-border: #efda89;
+    --table-row-border: #464753;
+    --modal-border:#2b2b2b;
+    --modal-bg:#000000C9;
+}
+
+/*}*/
+
+body {
+    background-color: var(--text-color-dark-1);
+    color: var(--text-color-light-3);
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    opacity: 0;
+    background-color: var(--text-color-dark-1);
+    transition: 0.3s;
+}
+
+.fadeIn {
+    opacity: 1;
+}

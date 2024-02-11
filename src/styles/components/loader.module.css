@@ -1,0 +1,29 @@
+.loading_div {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    align-items: center;
+    position: relative;
+    height: 450px;
+    background: var(--text-color-dark-1);
+    z-index: 1100;
+    visibility: hidden;
+}
+
+.loading_div.loading_div_display {
+    opacity: 1;
+    visibility: visible;
+}
+
+.loading_img {
+    max-width: 80px;
+}
+
+.loading_anim {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    font-family: var(--font-family-loader);
+    color: var(--text-color-light-4);
+}

@@ -1,0 +1,28 @@
+{
+  "title": "status",
+  "buttonText": "Back to dashboard",
+  "subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "cardKeys": {
+    "name": "Name",
+    "email": "Email",
+    "address": "Shipping address",
+    "method": "Payment method",
+    "link": "Link",
+    "status": "Print status"
+  },
+  "contractStatusCodes": {
+    "0":"Not requested",
+    "1":"Payment pending",
+    "2":"In print",
+    "3":"Shipment initiated",
+    "4":"Delivered"
+  },
+  "status": {
+    "notRequested": "Print not requested",
+    "requested": "Print requested",
+    "pending": "Payment pending",
+    "expired":"Payment expired",
+    "delayed":"Payment delayed",
+    "completed": "Payment completed"
+  }
+}

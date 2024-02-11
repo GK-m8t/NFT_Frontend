@@ -1,0 +1,15 @@
+.revise_modal{
+    width: 450px;
+}
+
+.address_text{
+    font: normal normal 600 14px var(--font-family-secondary);
+    color: var(--text-color-light-1);
+    margin-bottom: 8px;
+}
+
+.message_text{
+    font: normal normal 400 12px var(--font-family-secondary);
+    color: var(--text-color-light-1);
+    margin-bottom: 24px;
+}

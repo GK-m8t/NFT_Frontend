@@ -1,0 +1,44 @@
+.modal_div_text {
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.modal_title {
+    font: normal normal bold 36px/44px var(--font-family-primary);
+    color: var(--text-color-light-1);
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+.modal_p {
+    font: normal normal normal 14px/18px var(--font-family-secondary);
+    color: var(--text-color-light-2);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.modal_printButton {
+    background: var(--text-color-light-4) 0% 0% no-repeat padding-box;
+    font: normal normal normal 22px/18px var(--font-family-primary);
+    text-align: center;
+    border-radius: 32px;
+    width: 172px;
+    height: 54px;
+    margin-top: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.modal_printButton:hover{
+    opacity: 0.75;
+}
+
+@media screen and (max-width: 750px) {
+    .modal {
+        width: 320px !important;
+    }
+    .modal_title{
+        font-size: 28px;
+    }
+}
+

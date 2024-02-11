@@ -1,0 +1,44 @@
+{
+  "title": "admin dashboard",
+  "subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "noRecord": "No data found.",
+  "tableHeadings": {
+    "id": "Token id",
+    "personalInfo": "Personal info",
+    "address": "Shipping address",
+    "payment": " Payment details",
+    "status": "Status"
+  },
+  "statusCodes": {
+    "null":"Requested",
+    "SS00": "Requested",
+    "SS01": "In print",
+    "SS02": "Shipment initiated",
+    "SS03": "Delivered"
+  },
+  "methodCodes": {
+    "PM00": "Credit card",
+    "PM01": "Crypto"
+  },
+  "updateStatusModal": {
+    "currentStatus": "Current status :",
+    "selectStatus": "Update status :",
+    "statusValues": [
+      "Requested",
+      "In print",
+      "Shipment initiated",
+      "Delivered"
+    ],
+    "contract": "Update SC",
+    "database": "Update DB"
+  },
+  "toast": {
+    "success": {
+      "updateStatus": "Status has been updated."
+    },
+    "error": {
+      "updateStatus": "Something went wrong."
+    },
+    "info": {}
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "3D PRINTABLES DASHBOARD",
+  "buttonText": "Refresh",
+  "subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, incididunt ut labore et dolore magna aliqua.",
+  "noTokens": "Looks like you dont own any Wagmi Printables",
+  "card": {
+    "status": {
+      "notRequested": "Print not requested",
+      "requested": "Print requested",
+      "pending": "Payment pending",
+      "expired":"Payment expired",
+      "delayed":"Payment delayed",
+      "completed": "Payment completed"
+    },
+    "button": {
+      "print": "3D PRINT",
+      "status": "STATUS"
+    }
+  }
+}

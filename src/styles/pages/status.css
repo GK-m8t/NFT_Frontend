@@ -1,0 +1,54 @@
+.status_main_div {
+    margin: 30px var(--page-margin) 0 var(--page-margin);
+}
+
+.cardTitle {
+    width: 500px;
+}
+
+.statusDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 3px solid var(--checkout-col-heading-bg);
+    margin-top: -10px;
+    padding: 32px 24px;
+    border-radius: 12px;
+    background: var(--checkout-text-input);
+    width: 500px;
+}
+
+.statusDiv .data_row {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color-light-2);
+    font: normal normal 500 14px var(--font-family-secondary);
+}
+
+.statusDiv .data_row .data_info {
+    color: var(--text-color-light-1);
+    font: normal normal 500 16px var(--font-family-secondary);
+    text-align: right;
+    max-width: 240px;
+}
+
+.fwBold {
+    font-weight: 600 !important;
+}
+
+.statusDiv .data_row .data_info .payment_link {
+    font: normal normal 500 16px var(--font-family-secondary);
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease-in-out;
+}
+
+.statusDiv .data_row .data_info .payment_link:hover {
+    color: var(--text-color-button-background-1);
+}
+
+.payment_status {
+    color: var(--payment-pending) !important;
+}
